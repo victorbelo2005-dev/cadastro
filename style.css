@@ -1,0 +1,91 @@
+/* Paleta escura */
+:root {
+    --bg: #14141c;
+    --surface: #1e1e2a;
+    --border: #33334a;
+    --text: #e6e6f0;
+    --muted: #9a9ab0;
+    --accent: #7fb3d5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+form {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--muted);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Botões Cadastrar e Limpar com borda arredondada */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 2px solid var(--accent);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+input[type="submit"] {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    color: var(--accent);
+}
+
+input[type="reset"] {
+    background: transparent;
+    color: var(--accent);
+}
+
+input[type="reset"]:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
